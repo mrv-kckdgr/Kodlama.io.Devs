@@ -33,7 +33,7 @@ namespace Devs.Application.Features.technologies.Profiles
                 opt => opt.MapFrom(x => 
                                     x.ProgrammingLanguage.Name)).ReverseMap();  
             
-            CreateMap<IPaginate<TechnologyEntity>, TechnologyEntityGetByIdDto>().ReverseMap();
+            CreateMap<TechnologyEntity, TechnologyEntityGetByIdDto>().ReverseMap();
 
             CreateMap<IPaginate<TechnologyEntity>, TechnologyEntityListModel>().ReverseMap();
         }
